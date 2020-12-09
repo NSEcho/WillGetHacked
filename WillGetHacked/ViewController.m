@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "TestClass.h"
 
 @interface ViewController ()
 
@@ -15,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSLog(@"ECHO View loaded");
+    TestClass *test = [[TestClass alloc] init];
+    [test whoami];
 }
 
 
